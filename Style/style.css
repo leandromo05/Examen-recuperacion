@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+}
+nav{
+    background-color: #F2507B;
+    text-align:center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#ANav{
+    font-family:'Sedgwick Ave Display', cursive ;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    padding:20px;
+}
+header{
+   display: grid;
+   grid-template-columns: auto auto;
+}
+h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 150px;
+    color:#055BA6;
+    text-align: center;
+}
+#Imagen{
+    width: 65%;
+    height: 65%;
+    padding-left: 50px;
+    text-align: right;
+    position: relative;
+}
+
+#Section1{
+    font-family: 'Permanent Marker', cursive;
+    margin:6px;
+    font-size: 22px;
+    margin-bottom: 0ex;
+    background-image: linear-gradient(white,#F2CB05);
+    position: relative;
+    margin: 0px;
+}
+p{
+    margin: 0px;
+}
+#Container{
+    background-image: linear-gradient(#F2CB05,#F2507B,#055BA6);
+}
+#Galeria{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+      }
+      
+    
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 24%;
+    padding: 0 4px;
+      }
+      
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+      }
+footer{
+    text-align: center;
+    color: white;
+    font-family:'Permanent Marker', cursive;
+    background-color: #055BA6;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+a{
+    color: white;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+}
+@media screen and (max-width: 850px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 48%;
+        padding-bottom: 2px;
+      }
+      #Imagen{
+        width: 85%;
+        height: 65%;
+      }
+      #Galeria{
+        justify-content: center;
+      }
+
+}
+@media screen and (max-width: 600px) {
+    header{
+        grid-template-columns: auto;
+    }
+    nav{
+        position: relative;
+        background-size: cover;
+    }
+    h1{
+        font-size: 130px;
+    }
+    #Imagen{
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+
+    
+}
